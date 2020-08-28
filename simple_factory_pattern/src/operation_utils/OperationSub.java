@@ -7,5 +7,5 @@ package operation_utils;
  */
 public class OperationSub extends Operation {
     @Override
-    public double GetResult(){return _numberA - _numberB;}
+    public double GetResult(){return this.get_numberA() - this.get_numberB();}
 }

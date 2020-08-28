@@ -12,13 +12,13 @@ public class OperationDiv extends Operation {
         //0.0/0.0 得到的结果是NaN(not an number的简称，即"不是数字")。通过Double.isNaN(double x)来判断。
         //正数/0.0 得到的结果是正无穷大，即Infenity
         //负数/0.0 得到的结果是负无穷大，即Infenity。通过Double.isInfinite(double x)来判断。
-        if(Double.isNaN(_numberA / _numberB)){
+        if(Double.isNaN(this.get_numberA() / this.get_numberB())){
             System.out.println("除数不能为0。");
             return 0;
-        }else if(Double.isInfinite(_numberA / _numberB)){
+        }else if(Double.isInfinite(this.get_numberA() / this.get_numberB())){
             System.out.println("除数不能为0。");
             return 0;
         }
-        return _numberA / _numberB;
+        return this.get_numberA() / this.get_numberB();
     }
 }

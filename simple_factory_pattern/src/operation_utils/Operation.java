@@ -9,8 +9,8 @@ public abstract class Operation {
 
     //java接口中的成员变量都是 public static final的，无法通过行为来修改属性，所以不使用接口类来实现
 
-    public double _numberA = 0;
-    public double _numberB = 0;
+    private double _numberA = 0;
+    private double _numberB = 0;
 
     public double get_numberA() {
         return _numberA;
