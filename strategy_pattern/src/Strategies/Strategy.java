@@ -7,5 +7,5 @@ package Strategies;
  * @Description 抽象的算法方法
  */
 public interface  Strategy {
-    public void AlgorithmInterface();
+    void AlgorithmInterface();
 }
